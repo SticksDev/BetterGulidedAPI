@@ -1,0 +1,24 @@
+{
+  "name": "bettergulidedapi",
+  "version": "0.0.1",
+  "description": "A API wrapper for gulided.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thatcooldevguy/BetterGulidedAPI.git"
+  },
+  "author": "Thatcooldevguy",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Thatcooldevguy/BetterGulidedAPI/issues"
+  },
+  "homepage": "https://github.com/Thatcooldevguy/BetterGulidedAPI#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "better-logging": "^4.5.0",
+    "chalk": "^4.1.0"
+  }
+}
