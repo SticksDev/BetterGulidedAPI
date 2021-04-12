@@ -2,6 +2,7 @@ const email = ""
 const password = ""
 const axios = require('axios').default;
 const chalk = require("chalk");
+const websocket = require("../ws/websocket");
 require('better-logging')(console, {
     color: {
         base: chalk.greenBright,
@@ -35,6 +36,11 @@ module.exports.login = function (email, password) {
             if(response.status === 200) {
                 console.info("Successfully logged in! (Non WebSocket)")
                 console.log("Attempting to bind to websocket.")
+                const cookie = response.headers["set-cookie"]
+                    .map((cookie) => cookie.split(" ")[0])
+                    .join("");
+                websocket.bind(cookie, "1ping")
+
             }
         })
         .catch(function (error) {

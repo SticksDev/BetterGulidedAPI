@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "better-logging": "^4.5.0",
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "ws": "^7.4.4"
   }
 }
